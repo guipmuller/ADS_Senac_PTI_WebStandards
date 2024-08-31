@@ -1,2 +1,7 @@
 [build]
-publish = "src/pages/home"
+  publish = "/"  # Define a raiz do projeto como o diretório de publicação
+
+[[redirects]]
+  from = "/"
+  to = "/src/pages/home/index.html"
+  status = 200
