@@ -1,0 +1,180 @@
+.home-container {
+  width: 80%;
+  height: 100%;
+  max-width: 100em;
+  background-color: #f4efc9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1em 0;
+}
+
+.sec-01-header,
+.sec-02-health,
+.sec-03-benefits,
+.sec-04-form,
+.sec-05-about,
+.sec-06-footer {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sec-01-header {
+  height: 20%;
+  background-color: #fff1a2;
+  flex-direction: row;
+}
+
+.sec-01-header img,
+.sec-05-about img {
+  width: 20em;
+  margin: 0.625em;
+}
+
+.sec-02-health {
+  height: 15%;
+  align-items: center;
+  flex-direction: row;
+}
+
+.sec-02-health img {
+  width: 15em;
+  margin: 0.625em;
+}
+
+.health-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.health-container h2 {
+  align-self: center;
+}
+
+.sec-03-benefits {
+  height: 15%;
+}
+
+.sec-03-benefits ul {
+  display: flex;
+  align-items: stretch;  
+  justify-content: space-between;
+}
+
+.sec-03-benefits li {
+  list-style-type: none;
+  border: 1px solid #355905;
+  background-color: #203602;
+  color: #fffded;
+  border-radius: 0.5em;
+  width: 30%;
+  padding: 1em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sec-04-form {
+  height: 25%;
+  margin-bottom: 1em;
+}
+
+.sec-04-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sec-04-form form button {
+  width: 50%;
+  align-self: center;
+}
+
+.sec-05-about,
+.sec-03-benefits {
+  background-color: #fffded;
+}
+
+.sec-05-about {
+  height: 20%;
+  flex-direction: row;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sec-06-footer {
+  height: 5%;
+  width: 100%;
+  background-color: #203602;
+  color: #f5f5f5;
+}
+
+@media screen and (max-width: 992px) {
+  .sec-03-benefits {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .home-container {
+    width: 100vw;
+    min-width: 350px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .sec-01-header,
+  .sec-02-health,
+  .sec-03-benefits,
+  .sec-04-form,
+  .sec-05-about,
+  .sec-06-footer {
+    padding: 0.5em 1em;
+  }
+
+  .sec-03-benefits {
+    height: auto;
+  }
+
+  .sec-03-benefits ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sec-03-benefits li {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .sec-05-about {
+    height: auto;
+    padding-bottom: 1em;
+  }
+}

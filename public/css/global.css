@@ -1,0 +1,60 @@
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Paleta padrão
+fundo-header: #fff1a2
+fundo-container: #F5CA42
+fundo-container-2: #fffded
+fundo-footer: #817023
+fundo-botões: #355905
+texto e fundo-beneficios: #203602
+fundo-web e texto-claro: #F5F5F5 */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125em;
+  background-color: #f5f5f5;
+  color: #203602;
+}
+
+input,
+select,
+textarea,
+button {
+  margin: 1em 0;
+  padding: 0.8em;
+  border-radius: 0.5em;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.2em rgba(53, 89, 5, 0.5);
+  outline: none;
+}
+
+button {
+  background-color: #355905;
+  color: #f5f5f5;
+  transition: 0.5s;
+}
+
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+
+  body {
+    height: auto;
+  }
+ 
+}
