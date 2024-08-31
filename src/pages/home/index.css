@@ -64,7 +64,7 @@ h2 {
 
 .sec-03-benefits ul {
   display: flex;
-  align-items: stretch;  
+  align-items: stretch;
   justify-content: space-between;
 }
 
@@ -129,10 +129,18 @@ h2 {
   .home-container {
     width: 100%;
   }
+  .header-left,
+  .health-container,
+  .sec-03-benefits ul,
+  .sec-04-form form {
+    margin-right: 1em;
+  }
+  .sec-04-form form button {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-
   .home-container {
     width: 100vw;
     min-width: 350px;
@@ -157,6 +165,12 @@ h2 {
   .sec-05-about,
   .sec-06-footer {
     padding: 0.5em 1em;
+  }
+  .header-left,
+  .health-container,
+  .sec-03-benefits ul,
+  .sec-04-form form {
+    margin-left: 1em;
   }
 
   .sec-03-benefits {
